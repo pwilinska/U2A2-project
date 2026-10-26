@@ -33,5 +33,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-# Temporary feature for testing Git revert
