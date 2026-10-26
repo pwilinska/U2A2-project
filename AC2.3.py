@@ -8,15 +8,28 @@ def get_user_age():
         except ValueError:
             print("Please enter a valid number.")
 
-age = get_user_age()
-print("Your age is:", age)
+
+def welcome_user():
+    name = input("Enter your name: ")
+    print("Welcome", name)
+
 
 def display_menu():
     print("1. View profile")
     print("2. Exit")
 
-display_menu()
 
 def save_user_data(age):
     with open("user_data.txt", "w") as file:
         file.write(str(age))
+
+
+def main():
+    welcome_user()
+    age = get_user_age()
+    display_menu()
+    save_user_data(age)
+
+
+if __name__ == "__main__":
+    main()
