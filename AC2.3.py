@@ -10,8 +10,8 @@ def get_user_age():
 
 
 def welcome_user():
-    name = input("Enter your name: ")
-    print("Welcome", name)
+    user_name = input("Enter your name: ")
+    print("Welcome", user_name)
 
 
 def display_menu():
