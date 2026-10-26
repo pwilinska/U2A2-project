@@ -16,3 +16,7 @@ def display_menu():
     print("2. Exit")
 
 display_menu()
+
+def save_user_data(age):
+    with open("user_data.txt", "w") as file:
+        file.write(str(age))
