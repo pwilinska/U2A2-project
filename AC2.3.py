@@ -10,3 +10,9 @@ def get_user_age():
 
 age = get_user_age()
 print("Your age is:", age)
+
+def display_menu():
+    print("1. View profile")
+    print("2. Exit")
+
+display_menu()
